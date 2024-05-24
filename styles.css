@@ -70,7 +70,6 @@ nav ul li a:hover {
     position: relative;
     z-index: 1;
     opacity: 1;
-    transition: opacity 2s;
 }
 
 #hero:hover .hero-content {
