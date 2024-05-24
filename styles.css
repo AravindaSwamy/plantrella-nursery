@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header, footer {
+    background-color: white; /* White header and footer */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0 0 10px 10px; /* Smooth bottom edges for header */
+}
+
+header {
+    border-radius: 0 0 10px 10px; /* Smooth bottom edges for header */
+}
+
+footer {
+    border-radius: 10px 10px 0 0; /* Smooth top edges for footer */
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333; /* Dark text for links */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    position: relative;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dull effect */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#hero:hover .hero-content {
+    opacity: 1;
+}
+
+#about, #gallery, #contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media img {
+    width: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #333;
+    border-top: 2px solid #ddd;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+}
