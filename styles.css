@@ -50,7 +50,7 @@ nav ul li a:hover {
 
 #hero {
     position: relative;
-    background: url('images/hero.jpg') no-repeat center center/cover;
+    background: url('hero.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 20px;
